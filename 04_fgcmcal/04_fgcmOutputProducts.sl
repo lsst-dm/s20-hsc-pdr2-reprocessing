@@ -8,5 +8,5 @@
 #SBATCH --reservation=tempnodes
 
 
-srun fgcmOutputProducts.py /datasets/hsc/repo --calib /datasets/hsc/calib/20200115 --rerun DM-23243/FGCM/fit
+srun fgcmOutputProducts.py /datasets/hsc/repo --rerun DM-23243/FGCM/fit
 # --config cycleNumber=4

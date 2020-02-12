@@ -8,6 +8,6 @@
 #SBATCH --reservation=tempnodes
 
 
-srun fgcmFitCycle.py /datasets/hsc/repo --calib /datasets/hsc/calib/20200115 --rerun DM-23243/FGCM/buildStars:DM-23243/FGCM/fit
+srun fgcmFitCycle.py /datasets/hsc/repo --rerun DM-23243/FGCM/buildStars:DM-23243/FGCM/fit
 # --config fromPreviousCycle
 # --config isFinalCycle=True
