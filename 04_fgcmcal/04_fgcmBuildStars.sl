@@ -3,7 +3,7 @@
 #SBATCH -p normal
 #SBATCH -N 1
 #SBATCH --ntasks-per-node=1
-#SBATCH -t 24:00:00
+#SBATCH -t 14-14:00:00
 #SBATCH -J fgcm 
 #SBATCH --reservation=tempnodes
 
