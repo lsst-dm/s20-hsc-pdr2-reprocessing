@@ -1,0 +1,181 @@
+
+tr processCcd {
+    profile condor "request_memory" "4000"
+    site lsstvc {
+        pfn "${PIPE_TASKS_DIR}/bin/processCcd.py"
+        arch "x86_64"
+        os "linux"
+        type "INSTALLED"
+    }
+}
+
+tr makeSkyMap {
+    site lsstvc {
+        pfn "${PIPE_TASKS_DIR}/bin/makeSkyMap.py"
+        arch "x86_64"
+        os "linux"
+        type "INSTALLED"
+    }
+}
+
+tr makeDiscreteSkyMap {
+    site lsstvc {
+        pfn "${PIPE_TASKS_DIR}/bin/makeDiscreteSkyMap.py"
+        arch "x86_64"
+        os "linux"
+        type "INSTALLED"
+    }
+}
+
+tr makeCoaddTempExp {
+    site lsstvc {
+        pfn "${PIPE_TASKS_DIR}/bin/makeCoaddTempExp.py"
+        arch "x86_64"
+        os "linux"
+        type "INSTALLED"
+    }
+}
+
+tr assembleCoadd {
+    site lsstvc {
+        pfn "${PIPE_TASKS_DIR}/bin/assembleCoadd.py"
+        arch "x86_64"
+        os "linux"
+        type "INSTALLED"
+    }
+}
+
+tr detectCoaddSources {
+    site lsstvc {
+        pfn "${PIPE_TASKS_DIR}/bin/detectCoaddSources.py"
+        arch "x86_64"
+        os "linux"
+        type "INSTALLED"
+    }
+}
+
+tr mergeCoaddDetections {
+    site lsstvc {
+        pfn "${PIPE_TASKS_DIR}/bin/mergeCoaddDetections.py"
+        arch "x86_64"
+        os "linux"
+        type "INSTALLED"
+    }
+}
+
+tr deblendCoaddSources {
+    site lsstvc {
+        pfn "${PIPE_TASKS_DIR}/bin/deblendCoaddSources.py"
+        arch "x86_64"
+        os "linux"
+        type "INSTALLED"
+    }
+}
+
+tr measureCoaddSources {
+    site lsstvc {
+        pfn "${PIPE_TASKS_DIR}/bin/measureCoaddSources.py"
+        arch "x86_64"
+        os "linux"
+        type "INSTALLED"
+    }
+}
+
+tr mergeCoaddMeasurements {
+    site lsstvc {
+        pfn "${PIPE_TASKS_DIR}/bin/mergeCoaddMeasurements.py"
+        arch "x86_64"
+        os "linux"
+        type "INSTALLED"
+    }
+}
+
+tr forcedPhotCoadd {
+    site lsstvc {
+        pfn "${MEAS_BASE_DIR}/bin/forcedPhotCoadd.py"
+        arch "x86_64"
+        os "linux"
+        type "INSTALLED"
+    }
+}
+
+tr forcedPhotCcd {
+    site lsstvc {
+        pfn "${MEAS_BASE_DIR}/bin/forcedPhotCcd.py"
+        arch "x86_64"
+        os "linux"
+        type "INSTALLED"
+    }
+}
+
+tr matchedVisitMetrics {
+    site lsstvc {
+        pfn "${VALIDATE_DRP_DIR}/bin/matchedVisitMetrics.py"
+        arch "x86_64"
+        os "linux"
+        type "INSTALLED"
+    }
+}
+
+tr visitAnalysis {
+    site lsstvc {
+        pfn "${PIPE_ANALYSIS_DIR}/bin/visitAnalysis.py"
+        arch "x86_64"
+        os "linux"
+        type "INSTALLED"
+    }
+}
+
+tr coaddAnalysis {
+    site lsstvc {
+        pfn "${PIPE_ANALYSIS_DIR}/bin/coaddAnalysis.py"
+        arch "x86_64"
+        os "linux"
+        type "INSTALLED"
+    }
+}
+
+tr colorAnalysis {
+    site lsstvc {
+        pfn "${PIPE_ANALYSIS_DIR}/bin/colorAnalysis.py"
+        arch "x86_64"
+        os "linux"
+        type "INSTALLED"
+    }
+}
+
+tr matchVisits {
+    site lsstvc {
+        pfn "${QA_EXPLORER_DIR}/bin/matchVisits.py"
+        arch "x86_64"
+        os "linux"
+        type "INSTALLED"
+    }
+}
+
+tr writeObjectTable {
+    site lsstvc {
+        pfn "${PIPE_TASKS_DIR}/bin/writeObjectTable.py"
+        arch "x86_64"
+        os "linux"
+        type "INSTALLED"
+    }
+}
+
+tr transformObjectCatalog {
+    site lsstvc {
+        pfn "${PIPE_TASKS_DIR}/bin/transformObjectCatalog.py"
+        arch "x86_64"
+        os "linux"
+        type "INSTALLED"
+    }
+}
+
+tr consolidateObjectTable {
+    site lsstvc {
+        pfn "${PIPE_TASKS_DIR}/bin/consolidateObjectTable.py"
+        arch "x86_64"
+        os "linux"
+        type "INSTALLED"
+    }
+}
