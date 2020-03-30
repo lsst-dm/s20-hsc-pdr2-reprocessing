@@ -16,8 +16,8 @@
 
     <site handle="lsstvc" arch="x86_64" os="linux">
         <!-- This is where intermediate data will be stored -->
-        <directory type="shared-scratch" path="/scratch/hchiang2/pegasus_scratch/">
-            <file-server operation="all" url="file:///scratch/hchiang2/pegasus_scratch/"/>
+        <directory type="shared-scratch" path="/scratch/${USER}/pegasus_scratch/">
+            <file-server operation="all" url="file:///scratch/${USER}/pegasus_scratch/"/>
         </directory>
         <profile namespace="pegasus" key="style" >condor</profile>
         <profile namespace="pegasus" key="auxillary.local">true</profile>
